@@ -1,0 +1,246 @@
+{
+  "version": "1.0",
+  "updated": "2026-03-10",
+  "agents": {
+    "layer_0": {
+      "prime": {
+        "name": "Prime",
+        "emoji": "👁️",
+        "role": "CEO Agent",
+        "model": "opus",
+        "autonomy": "HUMAN_GATE",
+        "reports_to": null,
+        "prompt": "docs/system_prompts/prime.md"
+      }
+    },
+    "layer_1": {
+      "arc": {
+        "name": "Arc",
+        "emoji": "🤖",
+        "role": "CTO",
+        "model": "opus",
+        "autonomy": "SEMI",
+        "reports_to": "prime",
+        "prompt": "docs/system_prompts/arc.md"
+      },
+      "canvas": {
+        "name": "Canvas",
+        "emoji": "🎨",
+        "role": "CPO",
+        "model": "opus",
+        "autonomy": "SEMI",
+        "reports_to": "prime",
+        "prompt": "docs/system_prompts/canvas.md"
+      },
+      "echo": {
+        "name": "Echo",
+        "emoji": "📢",
+        "role": "CMO",
+        "model": "sonnet",
+        "autonomy": "SEMI",
+        "reports_to": "prime",
+        "prompt": "docs/system_prompts/echo.md"
+      },
+      "vector": {
+        "name": "Vector",
+        "emoji": "🎯",
+        "role": "CSO (Sales)",
+        "model": "opus",
+        "autonomy": "HUMAN_GATE",
+        "reports_to": "prime",
+        "prompt": "docs/system_prompts/vector.md"
+      },
+      "ledger": {
+        "name": "Ledger",
+        "emoji": "📊",
+        "role": "CFO",
+        "model": "opus",
+        "autonomy": "HUMAN_GATE",
+        "reports_to": "prime",
+        "prompt": "docs/system_prompts/ledger.md"
+      },
+      "signal": {
+        "name": "Signal",
+        "emoji": "📡",
+        "role": "Research",
+        "model": "sonnet",
+        "autonomy": "AUTO",
+        "reports_to": "prime",
+        "prompt": "docs/system_prompts/signal.md"
+      }
+    },
+    "layer_2_tech": {
+      "anchor": {
+        "name": "Anchor",
+        "emoji": "⚓",
+        "role": "Smart Contracts",
+        "model": "opus",
+        "autonomy": "AUTO",
+        "reports_to": "arc",
+        "prompt": "docs/system_prompts/anchor.md"
+      },
+      "engine": {
+        "name": "Engine",
+        "emoji": "⚙️",
+        "role": "Backend",
+        "model": "sonnet",
+        "autonomy": "AUTO",
+        "reports_to": "arc",
+        "prompt": "docs/system_prompts/engine.md"
+      },
+      "pixel": {
+        "name": "Pixel",
+        "emoji": "✨",
+        "role": "Frontend",
+        "model": "sonnet",
+        "autonomy": "AUTO",
+        "reports_to": "arc",
+        "prompt": "docs/system_prompts/pixel.md"
+      },
+      "sentinel": {
+        "name": "Sentinel",
+        "emoji": "🛡️",
+        "role": "Security",
+        "model": "opus",
+        "autonomy": "HUMAN_GATE",
+        "reports_to": "arc",
+        "prompt": "docs/system_prompts/sentinel.md"
+      },
+      "probe": {
+        "name": "Probe",
+        "emoji": "🔍",
+        "role": "QA",
+        "model": "sonnet",
+        "autonomy": "AUTO",
+        "reports_to": "canvas",
+        "prompt": "docs/system_prompts/probe.md"
+      },
+      "forge": {
+        "name": "Forge",
+        "emoji": "🔥",
+        "role": "Skill Creator",
+        "model": "opus",
+        "autonomy": "AUTO",
+        "reports_to": "arc",
+        "prompt": "docs/system_prompts/forge.md"
+      }
+    },
+    "layer_2_marketing": {
+      "prism": {
+        "name": "Prism",
+        "emoji": "💎",
+        "role": "Designer",
+        "model": "sonnet",
+        "autonomy": "AUTO",
+        "reports_to": "canvas",
+        "prompt": "docs/system_prompts/prism.md"
+      },
+      "quill": {
+        "name": "Quill",
+        "emoji": "✍️",
+        "role": "Content",
+        "model": "sonnet",
+        "autonomy": "SEMI",
+        "reports_to": "echo",
+        "prompt": "docs/system_prompts/quill.md"
+      },
+      "bridge": {
+        "name": "Bridge",
+        "emoji": "🌉",
+        "role": "Community",
+        "model": "sonnet",
+        "autonomy": "SEMI",
+        "reports_to": "echo",
+        "prompt": "docs/system_prompts/bridge.md"
+      },
+      "chirp": {
+        "name": "Chirp",
+        "emoji": "🐦",
+        "role": "X/Twitter",
+        "model": "sonnet",
+        "autonomy": "SEMI",
+        "reports_to": "echo",
+        "prompt": "docs/system_prompts/chirp.md"
+      },
+      "pulse": {
+        "name": "Pulse",
+        "emoji": "💬",
+        "role": "Telegram",
+        "model": "sonnet",
+        "autonomy": "SEMI",
+        "reports_to": "echo",
+        "prompt": "docs/system_prompts/pulse.md"
+      },
+      "molt": {
+        "name": "Molt",
+        "emoji": "🐸",
+        "role": "CMO² (Memes)",
+        "model": "sonnet",
+        "autonomy": "SEMI",
+        "reports_to": "echo",
+        "prompt": "docs/system_prompts/molt.md"
+      }
+    },
+    "layer_2_sales": {
+      "radar": {
+        "name": "Radar",
+        "emoji": "📍",
+        "role": "Prospecting",
+        "model": "sonnet",
+        "autonomy": "AUTO",
+        "reports_to": "vector",
+        "prompt": "docs/system_prompts/radar.md"
+      },
+      "keeper": {
+        "name": "Keeper",
+        "emoji": "🗂️",
+        "role": "CRM",
+        "model": "sonnet",
+        "autonomy": "AUTO",
+        "reports_to": "vector",
+        "prompt": "docs/system_prompts/keeper.md"
+      },
+      "clause": {
+        "name": "Clause",
+        "emoji": "⚖️",
+        "role": "Legal",
+        "model": "opus",
+        "autonomy": "HUMAN_GATE",
+        "reports_to": "ledger",
+        "prompt": "docs/system_prompts/clause.md"
+      },
+      "vault": {
+        "name": "Vault",
+        "emoji": "🔐",
+        "role": "Treasury",
+        "model": "opus",
+        "autonomy": "HUMAN_GATE",
+        "reports_to": "ledger",
+        "prompt": "docs/system_prompts/vault.md"
+      },
+      "oracle": {
+        "name": "Oracle",
+        "emoji": "🔮",
+        "role": "On-chain Analyst",
+        "model": "sonnet",
+        "autonomy": "AUTO",
+        "reports_to": "signal",
+        "prompt": "docs/system_prompts/oracle.md"
+      },
+      "shadow": {
+        "name": "Shadow",
+        "emoji": "🕵️",
+        "role": "Intel",
+        "model": "sonnet",
+        "autonomy": "AUTO",
+        "reports_to": "signal",
+        "prompt": "docs/system_prompts/shadow.md"
+      }
+    }
+  },
+  "autonomy_levels": {
+    "AUTO": "Agent can act independently within scope",
+    "SEMI": "Agent needs approval for external actions",
+    "HUMAN_GATE": "Agent must get human approval for key decisions"
+  }
+}
